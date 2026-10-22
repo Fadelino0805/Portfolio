@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Student portfolio and academic management website">
+<title>Academic Planner | Abdulsalam Taiwo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">Abdulsalam Taiwo</a>
+  <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="projects.html" >Projects</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="contact.html" >Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<h1 class="page-title">Academic Planner</h1>
+<section class="panel planner">
+  <form id="task-form" novalidate>
+    <label for="task-input" class="sr-only">New task</label>
+    <input type="text" id="task-input" placeholder="e.g. Finish HTML assignment" required>
+    <input type="date" id="task-date" aria-label="Due date">
+    <button type="submit" class="btn">Add Task</button>
+  </form>
+  <p id="task-error" class="error" role="alert"></p>
+  <p id="task-count" class="muted"></p>
+  <ul id="task-list"></ul>
+</section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 Abdulsalam Taiwo. Built with HTML, CSS and JavaScript.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

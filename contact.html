@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Student portfolio and academic management website">
+<title>Contact | Abdulsalam Taiwo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">Abdulsalam Taiwo</a>
+  <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav id="main-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="about.html" >About</a></li>
+      <li><a href="projects.html" >Projects</a></li>
+      <li><a href="planner.html" >Planner</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<h1 class="page-title">Contact Me</h1>
+<section class="panel narrow">
+<form id="contact-form" novalidate>
+  <div class="field"><label for="name">Name</label><input type="text" id="name" name="name"><span class="error" id="name-error"></span></div>
+  <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email"><span class="error" id="email-error"></span></div>
+  <div class="field"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone"><span class="error" id="phone-error"></span></div>
+  <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><span class="error" id="message-error"></span></div>
+  <button type="submit" class="btn">Send Message</button>
+  <p id="form-success" class="success" role="status"></p>
+</form></section>
+</main>
+<footer class="site-footer"><p>&copy; 2026 Abdulsalam Taiwo. Built with HTML, CSS and JavaScript.</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
